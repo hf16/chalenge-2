@@ -1,3 +1,4 @@
+//NOMOR 1
 function changeWord(selectedText, changedText, text){
     hasil = text
     let result = hasil.replace(selectedText, changedText);
@@ -67,7 +68,6 @@ function checkEmial(email){
     else if(typeof email != "string"){
         return output = "ERROR : Format Parameter Tidak Sesuai : Harus Menggunakan Format String"
     }
-  
 }
 // console.log(checkEmial("apranata@binar.co.id"))
 // console.log(checkEmial("apranata@binar.com"))
@@ -97,7 +97,6 @@ function isValidPassword(givenPassword){
     if (typeof givenPassword != "Stirng"){
         return hasil = "Format Parameter Tidak Sesuai : Harus Menggunakan Format String"
     }
-
 }
 // console.log(isValidPassword("Meong2021"))
 // console.log(isValidPassword("meong2021"))
@@ -142,8 +141,6 @@ function getSplitName(personName){
 
         return person
     }
-     
-
 }
 // console.log(getSplitName("Helmi Farizki Syah"))
 // console.log(getSplitName("Helmi Farizki"))
@@ -215,7 +212,6 @@ const dataPenjualPakAldi = [
         kategori : "Sepatu Sneker",
         totalTerjual : 90,
     },
-
 ]
 
 function hitungTotalPenjualan(dataPenjual){
@@ -226,7 +222,6 @@ function hitungTotalPenjualan(dataPenjual){
         temp.push(dataPenjual[index].totalTerjual)
       }
       return temp + " : Maka Total Barang Terjual= " +sum
-
 }
 // console.log(hitungTotalPenjualan(dataPenjualPakAldi))
 
@@ -272,8 +267,6 @@ const dataPenjualanNovel = [
     },
   ];
 
-
-
 function getInfoPenjualan(dataPenjualan){
     let totalKeuntungan =0;
     let totalModal =0;
@@ -312,6 +305,5 @@ function getInfoPenjualan(dataPenjualan){
       + "\nprodukTerlaris: "+ produkBukuTerlaris +","
       + "\npenulisTerlaris: "+ penulisTerlaris
 }
-
 // console.log(getInfoPenjualan(dataPenjualanNovel))
 
